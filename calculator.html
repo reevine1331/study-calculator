@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="./calculator.css">
+  <title>title</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="calc-value" id="calc-value"></div>
+    <div class="button-column">
+      <div class="button other" onclick="clearValue()">AC</div>
+      <div class="button other">+/-</div>
+      <div class="button other">%</div>
+      <div class="button calculation" onclick="setCalculation(4)">÷</div>
+    </div>
+    <div class="button-column">
+      <div class="button number" onclick="setNumber(7)">7</div>
+      <div class="button number" onclick="setNumber(8)">8</div>
+      <div class="button number" onclick="setNumber(9)">9</div>
+      <div class="button calculation" onclick="setCalculation(3)">×</div>
+    </div>
+    <div class="button-column">
+      <div class="button number" onclick="setNumber(4)">4</div>
+      <div class="button number" onclick="setNumber(5)">5</div>
+      <div class="button number" onclick="setNumber(6)">6</div>
+      <div class="button calculation" onclick="setCalculation(2)">-</div>
+    </div>
+    <div class="button-column">
+      <div class="button number" onclick="setNumber(1)">1</div>
+      <div class="button number" onclick="setNumber(2)">2</div>
+      <div class="button number" onclick="setNumber(3)">3</div>
+      <div class="button calculation" onclick="setCalculation(1)">+</div>
+    </div>
+    <div class="button-column">
+      <div class="button number double" onclick="setNumber(0)">0</div>
+      <div class="button number">.</div>
+      <div class="button calculation" onclick="calc()">=</div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="calculator.js"></script>
+</html>
